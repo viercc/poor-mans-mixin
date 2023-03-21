@@ -1,0 +1,16 @@
+cabal-version:       2.0
+name:                poor-mans-mixin
+version:             0.1.0.0
+author:              Koji Miyazato
+maintainer:          viercc@gmail.com
+build-type:          Simple
+
+executable mixin
+  main-is:             test-mixin.hs
+  build-depends:       base >=4.13, mix-a, mix-b, mix-c
+  hs-source-dirs:      .
+  default-language:    Haskell2010
+
+executable orphans
+  main-is:            orphans.hs
+  build-depends:      base >=4.13, foo-class, bar-type, foo-bar-instance
